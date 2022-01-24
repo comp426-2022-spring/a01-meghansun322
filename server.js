@@ -38,7 +38,7 @@ const server = http.createServer((req, res) => {
       console.log(err);
       return process.exit(1);
     }
-    res.end(data);
+    res.end(data); // data has the contents of index.html
   });
 });
 // Start the `server` const listening on the port defined by argument in your `port` const.
