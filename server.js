@@ -33,6 +33,7 @@ fs.readFile("./www/index.html", "utf8", (err, data) => {
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
   res.setHeader("Content-Type", "text/html");
+  // This is an async call
   fs.readFile("./www/index.html", "utf8", (err, data) => {
     if (err) {
       console.log(err);
